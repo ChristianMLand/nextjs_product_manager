@@ -4,7 +4,10 @@
 - demonstrate `useSWR` and `useSWRMutation` for client side data fetching
     - client side data fetching is great for data fetching at the component level
     - client side data fetching is necessary if we want to fetch/mutate data upon user input/interaction such as submitting a form or clicking a button
-
+- demonstrate benefits of service architecture
+    - by abstracting out our db interaction logic, our controllers don't need to change even if our db/orm does
+    - the same service functions used to handle our db interactions in our api endpoints can also be used to fetch data with ssr
+    - by abstracting out our client side request logic, our react views/components don't need to change, even if we change the api we are using
 # Tech used
 - next.js for framework
 - sqlite for db
