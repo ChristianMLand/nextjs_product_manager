@@ -2,6 +2,8 @@
 - demonstrate SSR with `getServerSideProps` in a simple to understand way
     - SSR is great for data fetching at the page/view level and avoids making unnecessary http requests
 - demonstrate `useSWR` and `useSWRMutation` for client side data fetching
+    - swr is great because it caches api requests/responses and revalidates to avoid making extra requests. This means we can safely try to fetch the data multiple times in a page, but it will only actually be fetched once
+        - this lets us avoid needing context in many situations we might have otherwise needed it
     - client side data fetching is great for data fetching at the component level
     - client side data fetching is necessary if we want to fetch/mutate data upon user input/interaction such as submitting a form or clicking a button
 - demonstrate benefits of service architecture
